@@ -1,0 +1,34 @@
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+}
+
+.container{
+  background: rgb(167, 177, 212);
+  height: 100vh;
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+  /* z-index: -3; */
+}
+
+.film{
+  position: fixed;
+  width: 700px;
+  left: 25vw;
+  top: -3vh;
+  animation: wiggle 3s infinite alternate;
+  /* z-index: -2; */
+}
+
+@keyframes wiggle{
+  0%{
+    transform:translateY(-200vh);
+  }
+  100%{
+    transform:translateY(10vh);
+  }
+}
